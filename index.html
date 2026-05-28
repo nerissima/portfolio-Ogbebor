@@ -1,3 +1,6 @@
+# INDEX.HTML
+
+```html
 <!DOCTYPE html>
 <html lang="it">
 
@@ -12,54 +15,134 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
+
     <header class="navbar">
+
         <div class="nav-container">
-            <div class="nav-brand">OA <span>Ogbebor Aaron</span></div>
+
+            <div class="nav-brand">
+                OA <span>Ogbebor Aaron</span>
+            </div>
+
             <nav>
-                <a href="index.html">Home</a>
+                <a class="active" href="index.html">Home</a>
                 <a href="pcto.html">PCTO</a>
                 <a href="umanistica.html">Area Umanistica</a>
                 <a href="professionale.html">Area Professionale</a>
                 <a href="educazione-civica.html">Educazione Civica</a>
             </nav>
+
         </div>
+
     </header>
 
+    <!-- HERO -->
+
     <main class="hero">
-        <h1>Ogbebor <span>Aaron</span></h1>
-        <p class="subtitle">Studente Classe 5BM</p>
-        <p class="year">Anno scolastico 2025/2026</p>
 
-        <p class="description">
-    <strong>Chi sono</strong><br>
-    Mi chiamo Ogbebor Aaron e sono uno studente della classe 5BM, appassionato di informatica.
-    Ho sviluppato competenze in programmazione e sviluppo web e ho svolto il PCTO presso Altesia S.r.l.,
-    lavorando con C#, PHP, HTML e CSS. Questo portfolio racconta il mio percorso e la mia crescita personale e professionale.
-        </p>
+        <div class="hero-content">
 
-        <div class="buttons">
-            <a class="btn primary" href="pcto.html">Scopri il mio PCTO</a>
-            <a class="btn secondary" href="#sezioni">Esplora le sezioni</a>
+            <!-- TESTO -->
+
+            <div class="hero-text">
+
+                <h1>
+                    Ogbebor <span>Aaron</span>
+                </h1>
+
+                <p class="subtitle">
+                    Studente Classe 5BM
+                </p>
+
+                <p class="year">
+                    Anno scolastico 2025/2026
+                </p>
+
+                <p class="description">
+
+                    Mi chiamo Ogbebor Aaron e sono uno studente appassionato
+                    di informatica e sviluppo web.
+
+                    Durante il mio percorso scolastico ho sviluppato competenze
+                    in programmazione, progettazione di siti web e lavoro di squadra.
+
+                    Questo portfolio racconta il mio percorso formativo,
+                    le competenze sviluppate e i progetti realizzati.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a class="btn primary" href="pcto.html">
+                        Scopri il mio PCTO
+                    </a>
+
+                    <a class="btn secondary" href="#sezioni">
+                        Esplora le sezioni
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FOTO -->
+
+            <div class="hero-image">
+
+                <div class="image-box">
+
+                    <img src="img/aaron.jpg" alt="Foto profilo Aaron">
+
+                </div>
+
+            </div>
+
         </div>
+
     </main>
 
+    <!-- SEZIONI -->
+
     <section id="sezioni" class="cards">
-        <a class="card" href="pcto.html">PCTO</a>
-        <a class="card" href="umanistica.html">Area Umanistica</a>
-        <a class="card" href="professionale.html">Area Professionale</a>
-        <a class="card" href="educazione-civica.html">Educazione Civica</a>
+
+        <a class="card" href="pcto.html">
+            PCTO
+        </a>
+
+        <a class="card" href="umanistica.html">
+            Area Umanistica
+        </a>
+
+        <a class="card" href="professionale.html">
+            Area Professionale
+        </a>
+
+        <a class="card" href="educazione-civica.html">
+            Educazione Civica
+        </a>
+
     </section>
 
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2025 Ogbebor Aaron – Classe 5BM</p>
+
+        <p>
+            © 2025 Ogbebor Aaron – Classe 5BM
+        </p>
+
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
+```

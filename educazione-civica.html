@@ -1,75 +1,347 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
-    <title>Educazione Civica – Ogbebor Aaron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educazione Civica | Ogbebor Aaron</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        .content-card img{
+            width:100%;
+            border-radius:var(--radius);
+            margin-top:1rem;
+            object-fit:cover;
+        }
+
+        .card-img{
+            max-height:230px;
+        }
+
+        .card-img2{
+            max-height:350px;
+        }
+
+        .img-side{
+            display:flex;
+            gap:10px;
+            margin-top:1rem;
+        }
+
+        .img-side img{
+            width:50%;
+            aspect-ratio:1/1;
+            object-fit:cover;
+            border-radius:var(--radius);
+        }
+
+        @media (max-width:640px){
+            .img-side{
+                flex-direction:column;
+            }
+
+            .img-side img{
+                width:100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">OA <span>Ogbebor Aaron</span></div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="pcto.html">PCTO</a>
-                <a href="umanistica.html">Area Umanistica</a>
-                <a href="professionale.html">Area Professionale</a>
-                <a class="active" href="educazione-civica.html">Educazione Civica</a>
-            </nav>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">OA</span>
+        <span>Ogbebor Aaron</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="index.html">Presentazione</a>
+        <a href="pcto.html">PCTO</a>
+        <a href="umanistica.html">Umanistica</a>
+        <a href="professionale.html">Professionale</a>
+        <a class="active" href="educazione-civica.html">Ed. Civica</a>
+    </nav>
+</header>
+
+<main class="page-shell">
+
+    <section class="page-hero">
+        <p class="eyebrow">Educazione Civica</p>
+        <h1>Libertà & Sicurezza</h1>
+
+        <p class="lead">
+            Un percorso interdisciplinare dedicato alla libertà di informazione,
+            alla sicurezza digitale e alla responsabilità nell'utilizzo delle
+            tecnologie moderne.
+        </p>
+    </section>
+
+    <!-- STORIA -->
+
+    <section class="section" id="storia">
+
+        <div class="section-heading">
+            <p class="eyebrow">Storia</p>
+            <h2>Informazione e democrazia</h2>
         </div>
-    </header>
 
-    <main class="page">
-        <section class="page-hero">
-            <h1>Educazione Civica</h1>
+        <div class="content-grid">
 
-        </section>
+            <article class="content-card">
+                <h3>Propaganda totalitaria</h3>
 
-        <section class="section">
-            <h2>Temi affrontati</h2>
+                <p>
+                    Nel corso del Novecento, soprattutto nei regimi totalitari
+                    come fascismo, nazismo e stalinismo, la propaganda è stata
+                    uno degli strumenti principali per mantenere il controllo
+                    sulla popolazione.
+                </p>
 
-        </section>
+                <p>
+                    Attraverso giornali, radio, manifesti e cinema, lo Stato
+                    diffondeva messaggi costruiti per influenzare le opinioni
+                    delle persone e creare consenso.
+                </p>
 
-        <section class="section">
-            <h2>Progetti</h2>
-            <div class="list-cards">
-                <article class="list-card">
-                    <div class="badge">Gruppo</div>
-                    <h4>[Titolo progetto 1]</h4>
+                <img src="img/prop.png" alt="Propaganda" class="card-img2">
+            </article>
 
-                </article>
+            <article class="content-card">
+                <h3>Censura e stampa</h3>
 
-                <article class="list-card">
-                    <div class="badge">Ricerca</div>
-                    <h4>[Titolo progetto 2]</h4>
+                <p>
+                    Nei regimi autoritari la libertà di stampa era praticamente
+                    inesistente. I giornali venivano controllati e ogni contenuto
+                    doveva essere approvato dal governo.
+                </p>
 
-                </article>
+                <p>
+                    Le opinioni contrarie venivano eliminate e chi si opponeva
+                    rischiava punizioni anche gravi.
+                </p>
 
-                <article class="list-card">
-                    <div class="badge">Attività</div>
-                    <h4>[Titolo progetto 3]</h4>
+                <div class="img-side">
+                    <img src="img/censura1.png" alt="Censura">
+                    <img src="img/censura2.png" alt="Controllo informazione">
+                </div>
+            </article>
 
-                </article>
-            </div>
-        </section>
+            <article class="content-card">
+                <h3>Articolo 19 ONU</h3>
 
-        <section class="quote">
-            <h2>Riflessione finale</h2>
+                <p>
+                    Dopo la Seconda guerra mondiale è diventato fondamentale
+                    garantire i diritti delle persone.
+                </p>
 
-        </section>
-    </main>
+                <p>
+                    L'articolo 19 della Dichiarazione Universale dei Diritti
+                    Umani afferma che ogni individuo ha diritto alla libertà
+                    di espressione e di informazione.
+                </p>
 
-    <footer>
-        <p>© 2025 Ogbebor Aaron – Classe 5BM</p>
-    </footer>
+                <img src="img/19.jpg" alt="Articolo 19 ONU">
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ITALIANO -->
+
+    <section class="section" id="italiano">
+
+        <div class="section-heading">
+            <p class="eyebrow">Italiano</p>
+            <h2>Comunicazione e spirito critico</h2>
+        </div>
+
+        <div class="content-grid">
+
+            <article class="content-card">
+                <img src="img/fake.jpg" alt="Fake News" class="card-img">
+
+                <h3>Fake News</h3>
+
+                <p>
+                    Le fake news sono notizie false o manipolate che si
+                    diffondono rapidamente soprattutto sui social.
+                </p>
+
+                <p>
+                    Spesso vengono create per attirare attenzione, influenzare
+                    opinioni o generare confusione.
+                </p>
+            </article>
+
+            <article class="content-card">
+                <h3>Metodo SIFT</h3>
+
+                <p>
+                    Il metodo SIFT è uno strumento utile per verificare
+                    le informazioni online.
+                </p>
+
+                <p>
+                    Consiste nel fermarsi prima di condividere, controllare
+                    la fonte, cercare conferme da altre fonti affidabili e
+                    risalire all'origine della notizia.
+                </p>
+            </article>
+
+            <article class="content-card">
+                <h3>Netiquette</h3>
+
+                <p>
+                    La netiquette è l'insieme delle regole di comportamento
+                    da seguire online.
+                </p>
+
+                <p>
+                    È importante rispettare gli altri, evitare linguaggi
+                    offensivi e comportarsi in modo responsabile.
+                </p>
+
+                <img src="img/net.png" alt="Netiquette" class="card-img">
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- GPOI -->
+
+    <section class="section" id="gpoi">
+
+        <div class="section-heading">
+            <p class="eyebrow">GPOI</p>
+            <h2>Protezione dei dati</h2>
+        </div>
+
+        <div class="content-grid">
+
+            <article class="content-card">
+                <h3>GDPR</h3>
+
+                <p>
+                    Il GDPR è il regolamento europeo che tutela i dati personali
+                    degli utenti.
+                </p>
+
+                <p>
+                    Stabilisce che i dati devono essere raccolti e utilizzati
+                    in modo trasparente e sicuro.
+                </p>
+
+                <img src="img/gd.jpg" alt="GDPR" class="card-img2">
+            </article>
+
+            <article class="content-card">
+                <h3>Gestione del rischio</h3>
+
+                <p>
+                    La gestione del rischio consiste nell'analizzare le possibili
+                    minacce ai sistemi informatici.
+                </p>
+
+                <p>
+                    È un aspetto fondamentale per garantire sicurezza nelle
+                    aziende e nei servizi digitali.
+                </p>
+            </article>
+
+            <article class="content-card">
+                <h3>Data Breach</h3>
+
+                <p>
+                    Un data breach è una violazione dei dati personali che può
+                    avvenire per errore o per attacchi informatici.
+                </p>
+
+                <p>
+                    Le aziende devono intervenire rapidamente e comunicarlo
+                    entro 72 ore.
+                </p>
+
+                <img src="img/dbre.jpg" alt="Data Breach" class="card-img2">
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- SISTEMI -->
+
+    <section class="section" id="sistemi">
+
+        <div class="section-heading">
+            <p class="eyebrow">Sistemi</p>
+            <h2>Sicurezza informatica</h2>
+        </div>
+
+        <div class="content-grid">
+
+            <article class="content-card">
+                <h3>Triade CIA</h3>
+
+                <p>
+                    La sicurezza informatica si basa su tre principi fondamentali:
+                    riservatezza, integrità e disponibilità dei dati.
+                </p>
+
+                <img src="img/cia.jpg" alt="Triade CIA" class="card-img2">
+            </article>
+
+            <article class="content-card">
+                <h3>Phishing</h3>
+
+                <p>
+                    Il phishing è una tecnica usata dai criminali informatici
+                    per ingannare le persone e ottenere dati sensibili.
+                </p>
+
+                <p>
+                    È importante riconoscere questi tentativi e non fidarsi
+                    di comunicazioni sospette.
+                </p>
+
+                <img src="img/phi.jpg" alt="Phishing" class="card-img2">
+            </article>
+
+            <article class="content-card">
+                <h3>Malware</h3>
+
+                <p>
+                    I malware sono programmi dannosi che possono infettare
+                    un dispositivo.
+                </p>
+
+                <p>
+                    Possono rubare dati, danneggiare file o bloccare il sistema.
+                </p>
+
+                <img src="img/mal.png" alt="Malware" class="card-img2">
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="quote">
+        <p>
+            "Essere cittadini digitali significa usare la tecnologia con
+            competenza, rispetto e senso critico."
+        </p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>Ogbebor Aaron · Classe 5BM ·  2026</p>
+</footer>
 
 </body>
-
 </html>
+```

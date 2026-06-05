@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
-    <title>PCTO – Ogbebor Aaron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSL | Ogbebor Aaron</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header class="navbar">
-    <div class="nav-container">
-        <div class="nav-brand">OA <span>Ogbebor Aaron</span></div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a class="active" href="pcto.html">PCTO</a>
-            <a href="umanistica.html">Area Umanistica</a>
-            <a href="professionale.html">Area Professionale</a>
-            <a href="educazione-civica.html">Educazione Civica</a>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">OA</span><span>Ogbebor Aaron</span></a>
+        <nav class="site-nav" aria-label="Navigazione principale">
+            <a href="index.html">Presentazione</a>
+            <a class="active" href="pcto.html">FSL</a>
+            <a href="umanistica.html">Umanistica</a>
+            <a href="professionale.html">Professionale</a>
+            <a href="educazione-civica.html">Ed. Civica</a>
         </nav>
-    </div>
-</header>
+    </header>
 
-<main class="page">
+    <main class="page-shell">
+        <section class="page-hero">
+            <p class="eyebrow">Percorsi per le Competenze Trasversali e l'Orientamento</p>
+            <h1>FSL presso Altesia S.r.l.</h1>
+            <p class="lead">Un'esperienza per osservare da vicino il lavoro nel settore informatico e collegare le conoscenze scolastiche a compiti reali.</p>
+        </section>
 
-    <section class="page-hero">
-        <h1>PCTO</h1>
-        <p class="page-subtitle">
-            Percorsi per le Competenze Trasversali e l'Orientamento
-        </p>
-    </section>
+        <section class="stats-grid">
+            <article>
+                <span>Azienda</span>
+                <strong>Altesia S.r.l.</strong>
+                <p>Innovative Solutions</p>
+            </article>
+            <article>
+                <span>Periodo</span>
+                <strong>Maggio, giugno e settembre 2025</strong>
+                <p>Attivita distribuite in piu momenti dell'anno</p>
+            </article>
+            <article>
+                <span>Ruolo</span>
+                <strong>Supporto IT e sviluppo web</strong>
+                <p>Affiancamento, esercitazioni e attivita operative</p>
+            </article>
+        </section>
 
-    <section class="grid-3">
-        <div class="info-card">
-            <h3>Azienda</h3>
-            <p>
-                <strong>
-                    <a href="https://www.altesia.it" target="_blank" rel="noopener noreferrer">
-                        Altesia S.r.l. – Innovative Solutions
-                    </a>
-                </strong>
-            </p>
-        </div>
-
-        <div class="info-card">
-            <h3>Periodo</h3>
-            <p><strong>maggio 2025 – giugno - settembre 2025</strong></p>
-        </div>
-
-        <div class="info-card">
-            <h3>Ruolo</h3>
-            <p><strong>Supporto IT e sviluppo web</strong></p>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Attività svolte</h2>
-        <div class="list-cards">
-            <div class="list-card">
-                <h4>Programmazione in C#</h4>
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Attivita</p>
+                <h2>Cosa ho fatto</h2>
             </div>
-            <div class="list-card">
-                <h4>Sviluppo web con PHP, HTML e CSS</h4>
-                <a href="https://apple-clone-three-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    Apple Clone
-                </a>
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Programmazione in C#</h3>
+                    <p>Ho lavorato su esercizi e logiche di programmazione, consolidando concetti come variabili, condizioni, cicli, metodi e organizzazione del codice.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Sviluppo web</h3>
+                    <p>Ho approfondito HTML, CSS e PHP, imparando a strutturare pagine, curare l'interfaccia e ragionare sul rapporto tra frontend e backend.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Progetto Apple Clone</h3>
+                    <p>Ho realizzato una pagina ispirata al sito Apple, lavorando su layout responsive, ordine visivo e attenzione al dettaglio.</p>
+                    <a href="https://apple-clone-three-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">Apri il progetto</a>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section">
-        <h2>Competenze acquisite</h2>
-        <div class="grid-2">
-            <div class="box">
-                <h3>Competenze tecniche</h3>
-                <ul>
-                    <li>C# e programmazione orientata agli oggetti</li>
-                    <li>HTML, CSS, PHP</li>
-                    <li>Gestione hardware e software</li>
-                    <li>Utilizzo strumenti digitali</li>
-                </ul>
+        <section class="section split">
+            <div>
+                <p class="eyebrow">Competenze</p>
+                <h2>Cosa porto all'esame</h2>
+                <p>Il PCTO mi ha aiutato a capire che nel lavoro informatico non basta conoscere un linguaggio: bisogna saper analizzare il problema, fare domande, rispettare tempi e consegne, testare cio che si sviluppa e comunicare con il team.</p>
             </div>
-
-            <div class="box">
-                <h3>Soft skills</h3>
-                <ul>
-                    <li>Lavoro di squadra</li>
-                    <li>Problem solving</li>
-                    <li>Autonomia e responsabilità</li>
-                </ul>
+            <div class="check-list">
+                <p>Programmazione orientata agli oggetti</p>
+                <p>HTML, CSS e basi PHP</p>
+                <p>Problem solving e autonomia</p>
+                <p>Collaborazione e responsabilita</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="quote">
-        <h2>Riflessione personale</h2>
-        <p class="muted">
-            Il PCTO mi ha permesso di entrare in contatto con il mondo del lavoro reale.
-        </p>
-    </section>
+        <section class="quote">
+            <p>"L'esperienza mi ha permesso di vedere l'informatica come un lavoro fatto di competenza tecnica, metodo e confronto continuo."</p>
+        </section>
+    </main>
 
-</main>
-
-<footer>
-    <p>© 2025 Ogbebor Aaron – Classe 5BM</p>
-</footer>
-
+    <footer class="site-footer">
+        <p>Ogbebor Aaron · Classe 5BM ·  2026</p>
+    </footer>
 </body>
 </html>

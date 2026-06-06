@@ -11,6 +11,16 @@
     --shadow: 0 18px 50px rgba(18, 24, 38, 0.09);
     --radius: 8px;
 }
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-copy {
+    flex: 1;
+}
 
 * {
     box-sizing: border-box;

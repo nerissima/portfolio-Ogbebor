@@ -25,44 +25,158 @@
         <section class="page-hero">
             <p class="eyebrow">Informatica e progettazione</p>
             <h1>Area Professionale</h1>
-            <p class="lead">Una raccolta delle competenze tecniche sviluppate attraverso lezioni, esercitazioni, progetti e attivita pratiche.</p>
+            <p class="lead">Una raccolta delle competenze tecniche sviluppate attraverso lezioni, esercitazioni, progetti e attività pratiche nelle materie dell'indirizzo informatico.</p>
         </section>
 
-        <section class="section">
+        <!-- INFORMATICA -->
+        <section class="section" id="informatica">
             <div class="section-heading">
-                <p class="eyebrow">Materie tecniche</p>
-                <h2>Materie tecniche</h2>
+                <p class="eyebrow">Informatica</p>
+                <h2>Sviluppo software</h2>
             </div>
             <div class="content-grid">
                 <article class="content-card">
-                    <h3>Informatica</h3>
-                    <p></p>
-                    <a class="btn small" href="materie_Area-professionale/informatica.html">Scopri</a>
+                    <h3>Gioco in C# WinForms</h3>
+                    <p>
+                        Nel terzo anno ho realizzato un gioco a piacimento utilizzando C# e Windows Forms.
+                        Il progetto mi ha permesso di consolidare la programmazione orientata agli oggetti,
+                        la gestione degli eventi grafici e la logica applicativa in un contesto creativo e interattivo.
+                    </p>
                 </article>
-            
+
                 <article class="content-card">
-                    <h3>Sistemi e Reti</h3>
-                    <p></p>
-                    <a class="btn small" href="materie_Area-professionale/sistemi-e-reti.html">Scopri</a>
-                </article>
-            
-                <article class="content-card">
-                    <h3>Tipsit</h3>
-                    <p></p>
-                    <a class="btn small" href="materie_Area-professionale/tipsit.html">Scopri</a>
-                </article>
-            
-                <article class="content-card">
-                    <h3>GPOI</h3>
-                    <p></p>
-                    <a class="btn small" href="materie_Area-professionale/gpoi.html">Scopri</a>
+                    <h3>Sito web con C# e database</h3>
+                    <p>
+                        Nel quarto anno ho sviluppato un sito web completo in C#, strutturato con classi
+                        di Business Logic (BL) che interrogavano un database MySQL gestito tramite PHPMyAdmin.
+                        Il progetto separava la logica applicativa dallo strato dati, seguendo un'architettura a livelli.
+                    </p>
                 </article>
             </div>
         </section>
+
+        <!-- SISTEMI E RETI -->
+        <section class="section" id="sistemi">
+            <div class="section-heading">
+                <p class="eyebrow">Sistemi e Reti</p>
+                <h2>Progetto Arduino & Raspberry Pi</h2>
+            </div>
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Comunicazione Arduino–Raspberry</h3>
+                    <p>
+                        Ho progettato un sistema in cui un pulsante su Arduino invia il valore letto
+                        da una fotoresistenza al Raspberry Pi. Il Raspberry simula un'elaborazione
+                        tramite un delay, stampa il valore ricevuto e restituisce un segnale di conferma
+                        ad Arduino per indicare che è pronto per il dato successivo.
+                    </p>
+                    <p>
+                        Nessun nuovo invio è consentito prima della ricezione della conferma,
+                        garantendo una comunicazione sincrona e affidabile tra i due dispositivi.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>LED di stato e controllo pressioni</h3>
+                    <p>
+                        Un LED su Arduino si accende al momento dell'invio del dato.
+                        Se il pulsante viene premuto più volte prima che arrivi la conferma
+                        dal Raspberry, il LED si attiva solo alla prima pressione,
+                        prevenendo invii multipli e garantendo coerenza nel protocollo.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Versione con 5 letture consecutive</h3>
+                    <p>
+                        Ho realizzato una versione estesa del progetto in cui è possibile effettuare
+                        fino a 5 letture della fotoresistenza in sequenza, prima di attendere la
+                        conferma finale. Questo ha richiesto la gestione di un buffer e la
+                        sincronizzazione degli stati tra i due dispositivi.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- TIPSIT -->
+        <section class="section" id="tipsit">
+            <div class="section-heading">
+                <p class="eyebrow">TIPSIT</p>
+                <h2>Tecnologie e programmazione</h2>
+            </div>
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Ingegneria del software</h3>
+                    <p>
+                        Ho studiato i fondamenti dell'ingegneria del software: ciclo di vita del software,
+                        metodologie di sviluppo, UML per la modellazione e le tecniche di testing.
+                        Questo modulo ha fornito una visione strutturata del processo di sviluppo
+                        di applicazioni complesse.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Java e concorrenza</h3>
+                    <p>
+                        Ho approfondito la programmazione in Java con particolare attenzione alla
+                        gestione della concorrenza: thread, sincronizzazione, monitor e problemi
+                        classici come produttore-consumatore. Le attività pratiche hanno consolidato
+                        la comprensione dei meccanismi di esecuzione parallela.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Android OS e laboratorio</h3>
+                    <p>
+                        Ho studiato l'architettura del sistema operativo Android e sviluppato
+                        applicazioni mobile tramite attività di laboratorio. Ho affrontato la
+                        gestione dei layout, il ciclo di vita delle Activity, gli Intent e
+                        la comunicazione tra componenti dell'app.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- GPOI -->
+        <section class="section" id="gpoi">
+            <div class="section-heading">
+                <p class="eyebrow">GPOI</p>
+                <h2>Analisi e gestione progetti</h2>
+            </div>
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Analisi e progettazione di un sito</h3>
+                    <p>
+                        Ho affrontato un progetto completo di analisi e progettazione di un sito web,
+                        partendo dall'identificazione dei requisiti fino alla definizione dell'architettura
+                        informativa e delle funzionalità principali, applicando le metodologie studiate
+                        in classe.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Stima dei costi di realizzazione</h3>
+                    <p>
+                        Ho analizzato i costi necessari per realizzare un progetto informatico:
+                        risorse umane, infrastruttura, licenze e tempistiche. Questo approccio economico
+                        mi ha permesso di comprendere come le decisioni tecniche si traducano
+                        in impatti concreti sul budget di un'azienda.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="quote">
+            <p>
+                Le materie tecniche mi hanno insegnato che un buon progetto nasce dall'unione di
+                competenze diverse: saper scrivere codice è solo il punto di partenza.
+            </p>
+        </section>
+
     </main>
 
     <footer class="site-footer">
-        <p>Ogbebor Aaron · Classe 5BM ·  2026</p>
+        <p>Ogbebor Aaron · Classe 5BM · 2026</p>
     </footer>
 </body>
 </html>
